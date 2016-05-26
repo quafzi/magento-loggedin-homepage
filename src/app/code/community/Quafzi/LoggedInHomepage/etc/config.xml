@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Quafzi_LoggedInHomepage
+ *
+ * This file is part of the Quafzi_AdminFreeShipping extension.
+ * Please do not edit or add to this file if you wish to upgrade it to newer
+ * versions in the future.
+ *
+ * @package    Quafzi_LoggedInHomepage
+ * @category   Quafzi_LoggedInHomepage
+ * @copyright  © 2016 by Thomas Birke <magento@netextreme.de>
+ * @license    OSL
+ */
+-->
+<config>
+    <modules>
+        <Quafzi_LoggedInHomepage>
+            <version>1.0.0</version>
+        </Quafzi_LoggedInHomepage>
+    </modules> 
+    <global>
+        <helpers>
+            <quafzi_loggedinhomepage>
+                <class>Quafzi_LoggedInHomepage_Helper</class>
+            </quafzi_loggedinhomepage>
+        </helpers>
+        <models>
+            <quafzi_loggedinhomepage>
+                <class>Quafzi_LoggedInHomepage_Model</class>
+            </quafzi_loggedinhomepage>
+        </models>
+        <events>
+            <controller_action_predispatch_cms_index_index>
+                <observers>
+                    <replace_homepage_for_loggedin_customers>
+                         <model>quafzi_loggedinhomepage/observer</model>
+                         <method>replaceHomepageForLoggedInCustomers</method>
+                    </replace_homepage_for_loggedin_customers>
+                </observers>
+            </controller_action_predispatch_cms_index_index>
+        </events>
+    </global>
+</config>

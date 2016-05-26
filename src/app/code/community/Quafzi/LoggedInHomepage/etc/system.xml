@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!--
+ * Quafzi_LoggedInHomepage
+ *
+ * This file is part of the Quafzi_LoggedInHomepage extension.
+ * Please do not edit or add to this file if you wish to upgrade it to newer
+ * versions in the future.
+ *
+ * @package    Quafzi_LoggedInHomepage
+ * @category   Quafzi_LoggedInHomepage
+ * @copyright  © 2016 by Thomas Birke <magento@netextreme.de>
+ * @license    OSL
+ */
+-->
+<config>
+    <sections>
+        <web>
+            <groups>
+                <default>
+                    <fields>
+                        <cms_home_page_loggedin_dependend translate="label">
+                            <label>Different CMS Home Page for logged-in customers</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model> 
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </cms_home_page_loggedin_dependend>
+                        <cms_home_page_loggedin_page translate="label">
+                            <depends>web/default/cms_home_page_loggedin_dependend</depends>
+                            <label>CMS Home Page for logged-in customers</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_cms_page</source_model> 
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </cms_home_page_loggedin_page>
+                    </fields>
+                </default>
+            </groups>
+        </web>
+    </sections>
+</config>

@@ -1,0 +1,14 @@
+{
+    "name": "quafzi/magento-loggedin-homepage",
+    "description": "Allows showing a different homepage for logged-in customers.",
+    "type": "magento-module",
+    "license": "OSL 3.0",
+    "authors": [
+        {
+            "name": "Thomas Birke",
+            "email": "quafzi@netextreme.de"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
