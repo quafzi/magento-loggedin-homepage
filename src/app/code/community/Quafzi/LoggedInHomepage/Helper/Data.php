@@ -19,8 +19,8 @@
  */
 class Quafzi_LoggedInHomepage_Helper_Data extends Mage_Core_Helper_Abstract
 {
-    const XML_PATH_LOGGEDIN_HOMEPAGE_DIFFERS = 'web/default/cms_home_page_login_dependend';
-    const XML_PATH_LOGGEDIN_HOMEPAGE = 'web/default/cms_home_page_loggedin';
+    const XML_PATH_LOGGEDIN_HOMEPAGE_DIFFERS = 'web/default/cms_home_page_loggedin_dependend';
+    const XML_PATH_LOGGEDIN_HOMEPAGE = 'web/default/cms_home_page_loggedin_page';
 
     public function enabled()
     {
