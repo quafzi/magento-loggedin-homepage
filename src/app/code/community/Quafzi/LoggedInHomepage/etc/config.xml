@@ -41,4 +41,15 @@
             </controller_action_predispatch_cms_index_index>
         </events>
     </global>
+    <adminhtml>
+        <translate>
+            <modules>
+                <Quafzi_LoggedInHomepage>
+                    <files>
+                        <default>Quafzi_LoggedInHomepage.csv</default>
+                    </files>
+                </Quafzi_LoggedInHomepage>
+            </modules>
+        </translate>
+    </adminhtml>
 </config>
